@@ -1,0 +1,124 @@
+<div class="mx-auto max-w-[1440px]">
+  <div class="border border-black shadow-lg p-2 rounded-md">
+    <h2 class="font-bold text-2xl mb-6">
+      {{ detailProduct?.name && detailProduct.name }}
+    </h2>
+    <div class="grid grid-cols-2 gap-6">
+      <div>
+        <img
+          src="{{
+            detailProduct.imageReview
+              ? detailProduct.imageReview
+              : detailProduct.image
+          }} "
+          alt=""
+        />
+      </div>
+      <div class="border border-gray-200 shadow-md p-4">
+        <div class="mb-6">
+          <p class="mb-3 text-red-500 font-bold text-2xl">
+            {{
+              detailProduct.price -
+                (detailProduct.price *
+                  (detailProduct.discount ? detailProduct.discount : 0)) /
+                  100 | number : "1.0-0"
+            }}
+            VNĐ
+          </p>
+          <div class="flex items-center gap-3">
+            <div>
+              <form class="w-[400px]">
+                <label
+                  for="number-input"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
+                  >Lựa chọn số lượng bạn muốn mua</label
+                >
+                <input
+                  type="number"
+                  id="number-input"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required
+                  [(ngModel)]="tempQuantity"
+                  name="amount_inp"
+                  value="1"
+                />
+              </form>
+            </div>
+            <div>
+              <button
+                (click)="addToCart(detailProduct.id)"
+                class="bg-orange-300 mt-[22px] font-bold text-white p-3 rounded-lg"
+              >
+                Thêm vào giỏ hàng
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="mb-6" />
+        <div>
+          <ul class="list-disc ml-[17px] leading-10">
+            <li><strong>Thương hiệu: </strong>Đồ chơi đến từ Đan Mạch</li>
+            <li><strong>Độ tuổi sử dụng: </strong>Từ 2+</li>
+            <li>
+              <strong>Chất liệu: </strong>Nhựa ABS cao cấp tuyệt đối an toàn
+            </li>
+            <li>
+              <strong>Hướng dẫn sử dụng: </strong>Xem hướng dẫn đính kèm trong
+              hộp
+            </li>
+            <li><strong>Số mảnh ghép: </strong>12 mảnh ghép</li>
+            <li><strong>Hotline: </strong>0384985533</li>
+          </ul>
+        </div>
+
+        <!-- ICON -->
+        <div class="mb-6">
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+          />
+
+          <section class="flex flex-col md:flex-row">
+            <div class="">
+              <div class="flex flex-wrap justify-center">
+                <button
+                  class="bg-black rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2"
+                >
+                  Twitter <i class="fab fa-twitter ml-1"></i>
+                </button>
+                <button
+                  class="bg-blue-700 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2"
+                >
+                  Facebook <i class="fab fa-facebook ml-1"></i>
+                </button>
+                <button
+                  class="bg-red-700 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2"
+                >
+                  Youtube <i class="fab fa-youtube ml-1"></i>
+                </button>
+                <button
+                  class="bg-pink-500 rounded-lg text-white text-xs text-center self-center px-3 py-2 my-2 mx-2"
+                >
+                  Instagram <i class="fab fa-instagram ml-1"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+        </div>
+
+        <div class="border border-red-500 p-4">
+          <h3 class="text-red-500 font-bold">Lưu ý</h3>
+          <ul class="list-disc ml-[20px] leading-8">
+            <li>
+              Sản phẩm được nhập từ Mỹ, đạt tiêu chuẩn chất lượng của Mỹ và Châu
+              Âu.
+            </li>
+            <li>Hoàn tiền 110% nếu hàng không đúng mô tả hoặc sai hình ảnh</li>
+            <li>Liên hệ đặt hàng Hotline: 0981058326 hoặc 0904568069</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="flex">
+  <div class="bg-[#313131] h-[100vh]">
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="flex-grow p-6 w-full">
+    <h1 class="text-center font-bold text-2xl mb-3">Danh sách tài khoản</h1>
+
+    <table
+      class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+    >
+      <thead
+        class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+      >
+        <tr>
+          <th scope="col" class="px-6 py-3">STT</th>
+          <th scope="col" class="px-6 py-3">Email</th>
+          <th scope="col" class="px-6 py-3">Số điện thoại</th>
+          <th scope="col" class="px-6 py-3">Vai trò</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of listAccount; track $index) {
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            {{ $index + 1 }}
+          </th>
+          <td class="px-6 py-4">{{ item.email }}</td>
+          <td class="px-6 py-4">{{ item.phone }}</td>
+          <td class="px-6 py-4">
+            {{ item.role === 0 ? "Admin" : "Khách hàng" }}
+          </td>
+        </tr>
+
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

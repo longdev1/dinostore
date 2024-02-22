@@ -1,0 +1,54 @@
+<div>
+  <div class="inline-flex items-center justify-center w-full mb-6">
+    <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+    <span
+      class="absolute p-3 rounded-lg font-BOLD text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-[#313131]"
+      >ĐỒ CHƠI GIẢM GIÁ</span
+    >
+  </div>
+  <div class="grid grid-cols-5 gap-4 mb-6">
+    @for (product of listDiscountProduct; track product) {
+    <div
+      class="border-solid border-2 border-gray-600-500 shadow-md px-[19px] py-1"
+    >
+      <a routerLink="/sanpham/{{ product.id }}">
+        <div class="hover:opacity-60 cursor-pointer">
+          <div class="mb-3">
+            <img src="{{ product.image }}" alt="" />
+          </div>
+          <div class="mb-3">
+            <p>{{ product.name }}</p>
+            <div class="flex items-start gap-2">
+              <div>
+                @if(product.discount && product.discount > 0) {
+                <strong class="text-red-500">
+                  {{
+                    product.price -
+                      (product.price *
+                        (product.discount ? product.discount : 0)) /
+                        100 | number : "1.0-0"
+                  }}
+                  <span class="text-gray-500 line-through ml-4">{{
+                    product.price | number : "1.0-0"
+                  }}</span>
+                </strong>
+                } @else {
+                <strong class="text-red-500">
+                  {{ product.price | number : "1.0-0" }}
+                </strong>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <button
+        (click)="addToCart(product.id, 1)"
+        class="bg-red-600 p-1 w-full cursor-pointer text-white font-bold"
+      >
+        Mua ngay
+      </button>
+    </div>
+    }
+  </div>
+</div>

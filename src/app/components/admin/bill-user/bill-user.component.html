@@ -1,0 +1,55 @@
+<div *ngIf="checkBill === true">
+  <div class="flex">
+    <div class="bg-[#313131] h-[100vh]">
+      <app-sidebar></app-sidebar>
+    </div>
+
+    <div class="flex-grow p-6 w-full">
+      <h1 class="text-center font-bold text-2xl mb-3">Thông tin mua hàng</h1>
+
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3">STT</th>
+            <th scope="col" class="px-6 py-3">Tên người đặt hàng</th>
+            <th scope="col" class="px-6 py-3">Số điện thoại</th>
+            <th scope="col" class="px-6 py-3">Địa chỉ</th>
+            <th scope="col" class="px-6 py-3">Tùy chọn</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (item of infoBill; track $index) {
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              {{ $index + 1 }}
+            </th>
+            <td class="px-6 py-4">{{ item.name }}</td>
+            <td class="px-6 py-4">{{ item.phone }}</td>
+            <td class="px-6 py-4">{{ item.address }}</td>
+            <td class="px-6 py-4">
+              <a
+                class="text-red-500 hover:text-blue-950 cursor-pointer"
+                (click)="viewBill(item.id)"
+                >Xem chi tiết đơn hàng</a
+              >
+            </td>
+          </tr>
+
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div *ngIf="checkBill === false">
+  <div class="flex justify-center items-center bg-[#ebecf2] h-screen">
+    <h1>KHÔNG CÓ THÔNG TIN ĐƠN HÀNG</h1>
+  </div>
+</div>

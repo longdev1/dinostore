@@ -1,0 +1,90 @@
+<div>
+  <div class="bg-red-500 font-bold text-white p-4" *ngIf="items.length === 0">
+    Bạn chưa có sản phẩm nào trong giỏ hàng
+  </div>
+  <div *ngIf="items.length > 0">
+    <h2 class="font-bold text-4xl bg-[#313131] text-white mb-6 p-4">
+      Giỏ hàng của bạn
+    </h2>
+    <div class="grid grid-cols-2 p-3 gap-16">
+      <div>
+        <div class="max-w-[1440px] mx-auto">
+          <div class="mb-6" *ngFor="let item of items; index as i">
+            <hr class="mb-6" />
+            <div class="flex justify-between">
+              <div>
+                <img src="{{ item.imageProduct }}" alt="" width="200px" />
+              </div>
+              <div class="flex flex-col justify-between">
+                <div class="leading-7">
+                  <p class="font-bold w-[400px]">{{ item.nameProduct }}</p>
+                  <p class="text-gray-500">
+                    {{
+                      item.cateProduct
+                        ? item.cateProduct == 1
+                          ? "Đồ chơi lắp ráp"
+                          : "Đồ chơi mô hình"
+                        : ""
+                    }}
+                  </p>
+                  <p class="font-bold text-green-600">
+                    {{ item.priceProduct | number : "1.0-0" }}
+                  </p>
+                </div>
+                <div>
+                  <label class="text-gray-400" for="">Số lượng:</label>
+                  <input
+                    class="ml-2 border border-black shadow-sm"
+                    [(ngModel)]="item.amountProduct"
+                    name="inp_cart"
+                    [value]="item.amountProduct"
+                    min="1"
+                    type="number"
+                  />
+                </div>
+              </div>
+              <div>
+                <i
+                  (click)="handleDelete(i)"
+                  class="fa-solid fa-xmark hover:text-red-600"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex flex-col p-8 bg-[#f9fafb] border rounded-lg h-[250px]">
+          <h2 class="mb-3 font-bold text-[20px]">Thông tin giỏ hàng</h2>
+          <div class="flex flex-col">
+            <div class="flex items-center justify-between mb-2">
+              <div>
+                <p>Số lượng sản phẩm</p>
+              </div>
+              <div>
+                <p class="font-bold">{{ amount() | number : "1.0-0" }}</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <p class="font-bold">Tổng số tiền cần thanh toán</p>
+              </div>
+              <div>
+                <p class="text-red-600 font-bold">
+                  {{ sum() | number : "1.0-0" }}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="bg-[#4f46e5] w-full p-4 text-white rounded-lg">
+              <a class="text-2xl font-bold" routerLink="thanhtoan"
+                >Thanh toán</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+<div class="flex">
+  <div class="bg-[#313131] h-[100vh]">
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="p-2 w-full">
+    <div class="flex items-center gap-4">
+      <div>
+        <form
+          #productForm="ngForm"
+          (ngSubmit)="onSubmit(productForm)"
+          class="border p-2 border-black mb-3"
+        >
+          <h2
+            class="bg-blue-500 text-white font-bold p-2 inline-block w-[200px]"
+          >
+            Thêm loại hàng
+          </h2>
+          <div class="mb-2">
+            <label for="">ID sản phẩm</label> <br />
+            <input
+              class="p-2 border"
+              type="text"
+              name="name"
+              placeholder="Auto Number"
+              disabled
+            />
+          </div>
+          <div>
+            <label for="">Tên sản phẩm</label> <br />
+            <input
+              class="p-2 border border-black"
+              type="text"
+              placeholder="Nhập tên sản phẩm"
+              name="nameCate"
+              ngModel
+              #nameCate="ngModel"
+              required
+            />
+          </div>
+          <div style="color: red" *ngIf="nameCate.invalid && nameCate.touched">
+            Vui lòng nhập tên sản phẩm
+          </div>
+          <button
+            class="p-2 mt-2 mb-2 text-white font-bold bg-green-600 w-[200px]"
+          >
+            Thêm loại hàng
+          </button>
+        </form>
+      </div>
+      <div>
+        <form
+          #editForm="ngForm"
+          (ngSubmit)="onEdit(editForm)"
+          class="border p-2 border-black mb-3"
+        >
+          <h2
+            class="bg-yellow-600 text-white font-bold p-2 inline-block w-[200px]"
+          >
+            Sửa loại hàng
+          </h2>
+          <div class="mb-2">
+            <label for="">ID sản phẩm</label> <br />
+            <input
+              class="p-2 border"
+              type="text"
+              name="name"
+              placeholder="Auto Number"
+              disabled
+            />
+          </div>
+          <div>
+            <label for="">Tên sản phẩm</label> <br />
+            <input
+              class="p-2 border border-black"
+              type="text"
+              name="nameCate"
+              placeholder="Click sản phẩm cần sửa"
+              [(ngModel)]="cate"
+              #nameCate="ngModel"
+              [disabled]="isInputDisabled"
+              required
+            />
+          </div>
+
+          <button
+            class="p-2 mt-2 mb-2 text-white font-bold bg-green-600 w-[200px]"
+          >
+            Sửa loại hàng
+          </button>
+        </form>
+      </div>
+    </div>
+    <table
+      class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+    >
+      <thead
+        class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+      >
+        <tr>
+          <th scope="col" class="px-6 py-3">ID</th>
+          <th scope="col" class="px-6 py-3">Tên loại hàng</th>
+          <th scope="col" class="px-6 py-3">Tùy chọn</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (cate of listCate; track $index) {
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >
+            {{ cate.id }}
+          </th>
+
+          <td class="px-6 py-4">{{ cate.nameCate }}</td>
+          <td class="px-6 py-4">
+            <a
+              (click)="editCate(cate.id)"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Sửa</a
+            >
+            <a
+              (click)="deleteCate(cate.id)"
+              class="font-medium text-red-600 dark:text-red-500 hover:underline ml-2"
+              >Xóa</a
+            >
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

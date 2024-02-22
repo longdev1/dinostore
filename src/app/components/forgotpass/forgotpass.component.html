@@ -1,0 +1,54 @@
+<div class="h-screen max-w-full relative">
+  <img
+    class="h-full w-full"
+    src="https://wallpapers.com/images/hd/white-plain-background-1920-x-1080-6h60zddohc41oxfs.jpg"
+    alt=""
+  />
+  <div
+    class="absolute top-[40%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+  >
+    <div class="flex justify-center">
+      <div>
+        <img
+          width="200px"
+          src="../../../assets/public/images/logo.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="w-[500px] flex justify-center">
+      <form (ngSubmit)="onSubmit()" #forgot="ngForm">
+        <label for="email">Điền vào email của</label>
+        <div class="mt-2 mb-2">
+          <input
+            class="w-[400px] border-2 border-black p-2 rounded-lg"
+            id="email"
+            name="email"
+            type="text"
+            [(ngModel)]="user.email"
+            placeholder="Nhập vào email của bạn"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}"
+          />
+        </div>
+
+        <div class="mt-2 mb-2">
+          <button
+            class="bg-[#96e564] text-black font-bold w-full p-2 rounded-lg hover:opacity-75"
+            type="submit"
+          >
+            Gửi mã
+          </button>
+        </div>
+        <div class="text-center">
+          <span
+            >Quay về trang
+            <strong class="hover:underline"
+              ><a routerLink="/dangnhap">Đăng nhập</a></strong
+            ></span
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

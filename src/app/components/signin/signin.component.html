@@ -1,0 +1,72 @@
+<div class="h-screen max-w-full relative">
+  <img
+    class="h-full w-full"
+    src="https://wallpapers.com/images/hd/white-plain-background-1920-x-1080-6h60zddohc41oxfs.jpg"
+    alt=""
+  />
+  <div
+    class="absolute top-[40%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+  >
+    <div class="flex justify-center">
+      <div>
+        <img
+          width="200px"
+          src="../../../assets/public/images/logo.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="w-[500px] flex justify-center">
+      <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <label for="email">Email</label>
+        <div class="mt-2 mb-2">
+          <input
+            class="w-[400px] border-2 border-black p-2 rounded-lg"
+            id="email"
+            name="email"
+            type="text"
+            [(ngModel)]="user.email"
+            placeholder="Nhập vào email của bạn"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}"
+          />
+        </div>
+        <label for="password">Mật khẩu</label>
+        <div class="mt-2 mb-2">
+          <input
+            class="w-[400px] border-2 border-black p-2 rounded-lg"
+            id="password"
+            [(ngModel)]="user.pass"
+            name="pass"
+            type="password"
+            placeholder="Nhập vào mật khẩu của bạn"
+            required
+          />
+        </div>
+        <div class="flex justify-end">
+          <div>
+            <a class="text-gray-400 hover:underline" routerLink="/quenmatkhau"
+              >Quên mật khẩu?</a
+            >
+          </div>
+        </div>
+        <div class="mt-2 mb-2">
+          <button
+            class="bg-[#96e564] text-black font-bold w-full p-2 rounded-lg hover:opacity-75"
+            type="submit"
+          >
+            Đăng nhập
+          </button>
+        </div>
+        <div class="text-center">
+          <span
+            >Nếu bạn chưa có tài khoản hãy
+            <strong class="hover:underline"
+              ><a routerLink="/dangky">Đăng ký</a></strong
+            ></span
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

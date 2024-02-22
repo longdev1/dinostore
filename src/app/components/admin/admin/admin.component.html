@@ -1,0 +1,89 @@
+<div class="flex">
+  <div class="bg-[#313131] h-screen">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div>
+    <div class="flex flex-col">
+      <div class="p-2 flex justify-evenly">
+        <div class="w-[200px] bg-[#1f2937] p-2 rounded-md">
+          <div class="flex items-center justify-around">
+            <div>
+              <p class="text-white font-bold">Sản phẩm</p>
+            </div>
+            <div>
+              <p class="text-yellow-600 font-bold">{{ listProduct }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[200px] bg-[#1f2937] p-2 rounded-md">
+          <div class="flex items-center justify-around">
+            <div>
+              <p class="text-white font-bold">Danh mục</p>
+            </div>
+            <div>
+              <p class="text-yellow-600 font-bold">{{ listCategory }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[200px] bg-[#1f2937] p-2 rounded-md">
+          <div class="flex items-center justify-around">
+            <div>
+              <p class="text-white font-bold">Tài khoản</p>
+            </div>
+            <div>
+              <p class="text-yellow-600 font-bold">{{ listAccount }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-between mt-6">
+        <div>
+          <canvas class="40%" id="doughnutChart"></canvas>
+        </div>
+        <div>
+          <div class="flex-grow-1 m-auto pl-3 ml-5">
+            <div
+              class="relative w-full overflow-x-auto shadow-md sm:rounded-lg"
+            >
+              <table
+                class="w-full flex flex-col text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+              >
+                <thead
+                  class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+                >
+                  <tr class="grid grid-cols-3">
+                    <th scope="col" class="px-6 py-3">Id</th>
+
+                    <th scope="col" class="px-6 py-3">Tên danh mục</th>
+                    <th scope="col" class="px-6 py-3">
+                      Số lượng sản phẩm có trong danh mục
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="max-h-[200px] overflow-y-scroll">
+                  @if (listCate) { @for (cate of listCate; track $index) {
+                  <tr class="grid grid-cols-3 border-b-[1px] border-gray-500">
+                    <th
+                      scope="row"
+                      class="px-6 py-4 font-medium text-gray-900 whitespace-nowra"
+                    >
+                      {{ cate.id }}
+                    </th>
+
+                    <td class="px-6 py-4">
+                      {{ cate.name }}
+                    </td>
+                    <td class="px-6 py-4 text-center">
+                      {{ cate.amount }}
+                    </td>
+                  </tr>
+                  } }
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

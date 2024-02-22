@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#dropdown:hover #dropdownContent {
+  display: block;
+}
+
+#dropdownContent {
+  display: none;
+}
+
+#dropIcon {
+  display: none;
+}
+
+.user:hover #dropIcon {
+  display: block;
+}

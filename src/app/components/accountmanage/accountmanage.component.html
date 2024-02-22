@@ -1,0 +1,49 @@
+<div>
+  <h2 class="bg-blue-500 text-white font-bold p-2 mb-2">Thông tin tài khoản</h2>
+  <form class="mb-2 p-4" action="">
+    <div class="flex flex-col border border-black p-4">
+      <div class="flex justify-end">
+        <div>
+          <a (click)="onEdit(user.id)">
+            <i class="fa-solid fa-pen hover:text-[#1877f2]"></i>
+          </a>
+        </div>
+      </div>
+      <div class="mb-2">
+        <label for="">Email</label> <br />
+        <input
+          class="p-2 border w-full"
+          type="text"
+          name="name"
+          [ngModel]="user?.email"
+          placeholder="Auto Number"
+          disabled
+        />
+      </div>
+      <div class="mb-2">
+        <label for="">Số điện thoại</label> <br />
+        <input
+          class="p-2 border w-full"
+          type="text"
+          name="image"
+          [ngModel]="user?.phone"
+          #image="ngModel"
+          disabled
+          placeholder="Nhập vào địa chỉ hình ảnh"
+        />
+      </div>
+      <div class="mb-2">
+        <label for="">Mật khẩu</label> <br />
+        <input
+          class="p-2 border w-full"
+          type="text"
+          name="pass"
+          ngModel
+          #name="ngModel"
+          disabled
+          placeholder="******"
+        />
+      </div>
+    </div>
+  </form>
+</div>

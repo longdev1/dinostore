@@ -1,0 +1,201 @@
+<div class="flex">
+  <div class="bg-[#313131]">
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="flex-grow p-6 w-full">
+    <!-- component -->
+    <form
+      class="mb-2"
+      #addForm="ngForm"
+      (ngSubmit)="onSubmit(addForm)"
+      action=""
+    >
+      <h2 class="bg-blue-500 text-white font-bold p-2 mb-2">Thêm loại hàng</h2>
+      <div class="grid grid-cols-4">
+        <div class="mb-2">
+          <label for="">ID sản phẩm</label> <br />
+          <input
+            class="p-2 border"
+            type="text"
+            name="name"
+            placeholder="Auto Number"
+            disabled
+          />
+        </div>
+        <!-- <div class="mb-2">
+          <label for="">Hình ảnh sản phẩm</label> <br />
+          <input
+            class="p-2 border"
+            type="text"
+            name="image"
+            ngModel
+            #image="ngModel"
+            placeholder="Nhập vào địa chỉ hình ảnh"
+          />
+        </div> -->
+        <div class="mb-2">
+          <label for="">Hình sản phẩm</label> <br />
+
+          <input
+            type="file"
+            ngModel
+            #image="ngModel"
+            name="productImage"
+            required
+            (input)="fileChoosen($event)"
+            (change)="onFileSelected($event)"
+            class="p-2 border w-[200px]"
+          />
+          <img
+            *ngIf="imageUrl"
+            width="200px"
+            [src]="imageUrl"
+            alt="Selected Image"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="">Tên sản phẩm</label> <br />
+          <input
+            class="p-2 border"
+            type="text"
+            name="name"
+            ngModel
+            #name="ngModel"
+            placeholder="Nhập vào tên sản phẩm"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="">Loại sản phẩm </label> <br />
+          <select
+            class="p-2 border w-[200px]"
+            name="idLoai"
+            id="categoryId"
+            [(ngModel)]="selectedCategoryId"
+          >
+            <option
+              *ngFor="let cate of listCategory; let i = index"
+              [value]="cate.id"
+            >
+              {{ cate.nameCate }}
+            </option>
+          </select>
+        </div>
+        <div class="col-span-4">
+          <label for="">Mô tả sản phẩm</label> <br />
+          <textarea
+            class="p-2 border w-[1153px] mb-2"
+            name="desc"
+            [(ngModel)]="desc"
+            id=""
+            cols=""
+            rows="5"
+            placeholder="Nhập vào mô tả sản phẩm"
+          ></textarea>
+        </div>
+        <div class="mb-2">
+          <label for="">Giá sản phẩm</label> <br />
+          <input
+            class="p-2 border"
+            type="number"
+            name="price"
+            ngModel
+            #price="ngModel"
+            placeholder="Nhập vào giá sản phẩm"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="">Discount</label> <br />
+          <input
+            class="p-2 border"
+            type="number"
+            name="discount"
+            ngModel
+            #discount="ngModel"
+            placeholder="Nhập vào giảm giá"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="">Hot</label> <br />
+          <input
+            class="p-2 border w-[200px]"
+            type="number"
+            min="0"
+            max="1"
+            name="hot"
+            ngModel
+            #hot="ngModel"
+            placeholder="0: Hot / 1: Không hot"
+          />
+        </div>
+        <div class="">
+          <label for="">Ảnh review</label> <br />
+          <input
+            class="p-2 border"
+            type="text"
+            name="name"
+            name="imageReview"
+            ngModel
+            #imageReView="ngModel"
+          />
+        </div>
+        <div>
+          <button class="p-2 mt-2 mb-2 text-white font-bold bg-green-600">
+            Thêm loại hàng
+          </button>
+        </div>
+      </div>
+    </form>
+    <table
+      class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+    >
+      <thead
+        class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 w-full"
+      >
+        <tr class="flex w-full mb-4 text-center">
+          <th class="flex-1 p-4">ID</th>
+          <th class="flex-1 p-4">Hinh sản phẩm</th>
+          <th class="flex-1 p-4">Tên sản phẩm</th>
+          <th class="flex-1 p-4">Loại sản phẩm</th>
+          <th class="flex-1 p-4">Giá</th>
+          <th class="flex-1 p-4">Discount</th>
+          <th class="flex-1 p-4">Hot</th>
+          <th class="flex-1 p-4">Tùy chọn</th>
+        </tr>
+      </thead>
+      <!-- Remove the nasty inline CSS fixed height on production and replace it with a CSS class — this is just for demonstration purposes! -->
+      <tbody
+        class="border-b dark:bg-gray-800 dark:border-gray-700 bg-grey-light block overflow-y-scroll w-full"
+        style="height: 600px"
+      >
+        @for (product of listProduct; track $index) {
+        <tr
+          class="flex w-full mb-4 text-center bg-white border-b dark:bg-gray-800 dark:border-gray-700 items-center"
+        >
+          <td class="flex-1 p-4">{{ product.id }}</td>
+          <td class="flex-1 p-4">
+            <img src="{{ product.image }}" width="100" alt="" />
+          </td>
+          <td class="flex-1 p-4">{{ product.name }}</td>
+          <td class="flex-1 p-4">{{ getNameCategory(product.idLoai) }}</td>
+          <td class="flex-1 p-4">{{ product.price | number : "1.0-0" }}</td>
+          <td class="flex-1 p-4">{{ product.discount }}%</td>
+          <td class="flex-1 p-4">{{ product.hot }}</td>
+          <td class="flex-1 p-4">
+            <a
+              (click)="editProduct(product.id)"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Sửa</a
+            >
+            <a
+              (click)="deleteProduct(product.id)"
+              class="font-medium text-red-600 dark:text-red-500 hover:underline ml-2"
+              >Xóa</a
+            >
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

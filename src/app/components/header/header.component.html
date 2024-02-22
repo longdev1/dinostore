@@ -1,0 +1,104 @@
+<div class="">
+  <div class="flex items-center justify-around">
+    <div>
+      <img src="../../../assets/public/images/logo.png" width="120px" alt="" />
+    </div>
+    <ul class="flex gap-5 relative font-sans">
+      <li class="cursor-pointer hover:text-blue-500">
+        <a routerLink="home">Trang chủ</a>
+      </li>
+      <li id="dropdown" class="cursor-pointer hover:text-blue-500">
+        <a href="" routerLink="sanpham">Sản Phẩm</a>
+        <div
+          id="dropdownContent"
+          class="absolute z-20 top-[100%] text-black rounded border-[1px] border-gray-300 shadow-md w-[200px]"
+        >
+          @for (cate of listCate; track cate) {
+          <div
+            class="cursor-pointer font-medium bg-white border-b-[1px] hover:bg-gray-400 p-4"
+          >
+            <a href="/loai/{{ cate.id }}">
+              {{ cate.nameCate }}
+            </a>
+          </div>
+          }
+        </div>
+      </li>
+      <li class="cursor-pointer hover:text-blue-500">Giới thiệu</li>
+      <li class="cursor-pointer hover:text-blue-500">Tin Tức</li>
+      <li class="cursor-pointer hover:text-blue-500">Liên hệ</li>
+    </ul>
+    <div class="flex items-center gap-8">
+      <div class="user relative">
+        @if(statusLogin()) {
+        <p>
+          <strong>{{ getNameUser() }}</strong>
+        </p>
+        }@else {
+
+        <a id="dropdownIcon" href="">
+          <i class="text-[25px] fa-solid fa-user"></i>
+        </a>
+        }
+        <div
+          *ngIf="statusLogin() === false"
+          id="dropIcon"
+          class="absolute right-0 top-[100%] text-black rounded border-[1px] border-gray-300 shadow-md w-[200px]"
+        >
+          <div
+            *ngIf="statusLogin() === false"
+            class="cursor-pointer font-medium bg-white border-b-[1px] hover:bg-gray-400 p-4"
+          >
+            <a href="/dangnhap"> Đăng nhập </a>
+          </div>
+          <div
+            *ngIf="statusLogin() === false"
+            class="cursor-pointer font-medium bg-white border-b-[1px] hover:bg-gray-400 p-4"
+          >
+            <a routerLink="dangky"> Đăng ký</a>
+          </div>
+        </div>
+      </div>
+      <div class="icon flex items-center">
+        <a routerLink="cart">
+          <i class="text-[25px] fa-solid fa-cart-shopping"></i>
+        </a>
+        <p class="bg-red-500 text-white font-bold p-2 rounded-full text-center">
+          {{ cartItem }}
+        </p>
+      </div>
+
+      <div class="flex items-center" *ngIf="statusLogin() === true">
+        <div class="user relative">
+          <a id="dropdownIcon" href="">
+            <i class="text-[25px] fa-solid fa-bars"></i>
+          </a>
+          <div
+            id="dropIcon"
+            class="absolute z-20 right-1/2 transform translate-x-1/2 top-[100%] text-black rounded border-[1px] border-gray-300 shadow-md w-[200px]"
+          >
+            <div
+              class="cursor-pointer font-medium bg-white border-b-[1px] hover:bg-gray-400 p-2"
+            >
+              <a (click)="logout()" href="">Thoát</a>
+            </div>
+            <div
+              class="cursor-pointer font-medium bg-white border-b-[1px] hover:bg-gray-400 p-2"
+            >
+              <a routerLink="lichsudonhang">Lịch sử mua hàng</a>
+            </div>
+            <div
+              class="cursor-pointer font-medium bg-white border-b-[1px] hover:bg-gray-400 p-2"
+            >
+              <a routerLink="quanlytaikhoan">Quản lý tài khoản</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div>
+          <a (click)="logout()" href="">Thoát</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>

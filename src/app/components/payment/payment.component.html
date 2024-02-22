@@ -1,0 +1,60 @@
+<form class="mb-2" #addForm="ngForm" (ngSubmit)="onSubmit(addForm)" action="">
+  <h2 class="bg-blue-500 text-white font-bold p-2 mb-2">
+    Thông tin thanh toán
+  </h2>
+  <div class="max-w-[1440px] mx-auto">
+    <div class="grid grid-cols-2 gap-x-4 gap-y-0">
+      <div class="mb-2">
+        <label for="">Tên khách hàng</label> <br />
+        <input
+          class="p-2 border w-full"
+          type="text"
+          name="name"
+          ngModel
+          #name="ngModel"
+          placeholder="Điền vào tên của bạn"
+        />
+      </div>
+      <div class="mb-2">
+        <label for="">Email khách hàng</label> <br />
+        <input
+          class="p-2 border w-full"
+          type="text"
+          name="email"
+          ngModel
+          #email="ngModel"
+          [ngModel]="emailUser"
+          placeholder="Điền vào email của bạn"
+        />
+      </div>
+      <div class="mb-2">
+        <label for="">Địa chỉ khách hàng</label> <br />
+        <input
+          class="p-2 border w-full"
+          type="text"
+          name="address"
+          ngModel
+          #address="ngModel"
+          placeholder="Điền vào địa chỉ của bạn"
+        />
+      </div>
+
+      <div class="mb-2">
+        <label for="">Số điện thoại khách hàng</label> <br />
+        <input
+          class="p-2 border w-full"
+          type="number"
+          name="phone"
+          ngModel
+          #phone="ngModel"
+          placeholder="Điền vào số điện thoại của bạn"
+        />
+      </div>
+      <div>
+        <button class="p-2 mt-2 mb-2 text-white font-bold bg-green-600">
+          Xác nhận thông tin
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

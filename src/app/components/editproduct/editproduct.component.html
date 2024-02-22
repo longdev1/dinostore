@@ -1,0 +1,161 @@
+<div class="flex">
+  <div class="bg-[#313131]">
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="flex-grow p-6 w-full h-screen">
+    <!-- component -->
+    <form
+      class="mb-2"
+      #addForm="ngForm"
+      (ngSubmit)="onSubmit(addForm)"
+      action=""
+    >
+      <h2 class="bg-blue-500 text-white font-bold p-2 mb-2">Thêm loại hàng</h2>
+      <div class="grid grid-cols-4">
+        <div class="mb-2">
+          <label for="">ID sản phẩm</label> <br />
+          <input
+            class="p-2 border"
+            type="text"
+            name="name"
+            placeholder="Auto Number"
+            disabled
+          />
+        </div>
+        <!-- <div class="mb-2">
+          <label for="">Hình ảnh sản phẩm</label> <br />
+          <input
+            class="p-2 border"
+            type="text"
+            name="image"
+            ngModel
+            #image="ngModel"
+            [ngModel]="product?.image"
+            placeholder="Nhập vào địa chỉ hình ảnh"
+          />
+        </div> -->
+        <div class="w-[100%] grid grid-cols-2 gap-[20px] mt-2">
+          <div>
+            <label
+              for="img"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Hình sản phẩm</label
+            >
+            <input
+              type="file"
+              ngModel
+              #image="ngModel"
+              name="productImage"
+              required
+              (input)="fileChoosen($event)"
+              (change)="onFileSelected($event)"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            />
+          </div>
+          <img
+            *ngIf="imageUrl"
+            width="200px"
+            [src]="imageUrl"
+            alt="Selected Image"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="">Tên sản phẩm</label> <br />
+          <input
+            class="p-2 border"
+            type="text"
+            name="name"
+            ngModel
+            #name="ngModel"
+            [ngModel]="product?.name"
+            placeholder="Nhập vào tên sản phẩm"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="">Loại sản phẩm </label> <br />
+          <select
+            class="p-2 border w-[200px]"
+            name="idLoai"
+            id="categoryId"
+            [ngModel]="product?.idLoai"
+          >
+            <option
+              *ngFor="let cate of listCategory; let i = index"
+              [value]="cate.id"
+            >
+              {{ cate.nameCate }}
+            </option>
+          </select>
+        </div>
+        <div class="col-span-4">
+          <label for="">Mô tả sản phẩm</label> <br />
+          <textarea
+            class="p-2 border w-[1153px] mb-2"
+            name="desc"
+            id=""
+            cols=""
+            rows="5"
+            [ngModel]="product?.desc"
+            placeholder="Nhập vào mô tả sản phẩm"
+          ></textarea>
+        </div>
+        <div class="mb-2">
+          <label for="">Giá sản phẩm</label> <br />
+          <input
+            class="p-2 border"
+            type="number"
+            name="price"
+            ngModel
+            #price="ngModel"
+            [ngModel]="product?.price"
+            placeholder="Nhập vào giá sản phẩm"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="">Discount</label> <br />
+          <input
+            class="p-2 border"
+            type="number"
+            name="discount"
+            ngModel
+            #discount="ngModel"
+            [ngModel]="product?.discount"
+            placeholder="Nhập vào giảm giá"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="">Hot</label> <br />
+          <input
+            class="p-2 border w-[200px]"
+            type="number"
+            min="0"
+            max="1"
+            name="hot"
+            ngModel
+            #hot="ngModel"
+            [ngModel]="product?.hot"
+            placeholder="0: Hot / 1: Không hot"
+          />
+        </div>
+        <div class="">
+          <label for="">Ảnh review</label> <br />
+          <input
+            class="p-2 border"
+            type="text"
+            name="name"
+            name="imageReview"
+            ngModel
+            [ngModel]="product?.imageReview"
+            #imageReView="ngModel"
+          />
+        </div>
+        <div>
+          <button class="p-2 mt-2 mb-2 text-white font-bold bg-green-600">
+            Thêm loại hàng
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

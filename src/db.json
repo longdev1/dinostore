@@ -1,0 +1,541 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "LEGO Minecraft 21163 - Đại chiến đá đỏ",
+      "price": "2150000",
+      "discount": 10,
+      "hot": 0,
+      "desc": "Mang niềm vui của trò chơi trực tuyến Minecraft Dungeons vào thế giới thực với LEGO Minecraft The Redstone Battle (21163); Người chơi tự tạo ra các cuộc phiêu lưu trong Dungeon với các nhân vật nổi tiếng và những người khổng lồ có thể tạo dáng",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/09/21163-1-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/09/21163-1.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 2,
+      "name": "LEGO City 60223 – Great Vehicles Harvester",
+      "price": "1250000",
+      "discount": 0,
+      "hot": 1,
+      "desc": "LEGO City 60223 – Great Vehicles Harvester Transport là bộ đồ chơi lắp ghép dành cho bé trai và bé gái trên 5 tuổi. Các bé sẽ xây dựng một chiếc xe tải đồ chơi vận chuyển ấn tượng với mở cabin và móc nối, rơ moóc vận chuyển có thể tháo rời với các đường dốc hạ thấp; một máy gặt đập đồ chơi kết hợp với công cụ thu hoạch có thể tháo rời và máy khoan không khớp nối..",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/05/Lego-60223-5-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/05/Lego-60223-5.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 3,
+      "name": "LEGO Minecraft 21162 – Cuộc phiêu lưu của Steve và Skeleton",
+      "price": "650000",
+      "discount": 0,
+      "hot": 1,
+      "desc": "Bộ LEGO Minecraft tuyệt vời này cho phép trẻ em tưởng tượng và xây dựng môi trường Minecraft của riêng chúng trong thế giới thực, sau đó sắp xếp lại, xây dựng lại và mô phỏng lại nó cho những cuộc phiêu lưu mới!",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/02/21162.4-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/02/21162.4.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 4,
+      "name": "LEGO Minecraft 21160 – Cuộc Đột Kích Của Illager",
+      "price": "3150000",
+      "discount": 10,
+      "hot": 1,
+      "desc": "Đưa người chơi Minecraft đến một chiều hướng mới với bộ LEGO Minecraft đầy hành động này gồm 3 phần mà trẻ em có thể sắp xếp lại để tạo ra những cuộc phiêu lưu thực hành vô tận giải quyết đám đông thù địch và quái thú quấy rối của chúng!.",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21160-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21160.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 5,
+      "name": "Lego Minecraft 21159 – Cuộc phiêu liu giải cứu Iron golem",
+      "price": "1550000",
+      "discount": 10,
+      "hot": 1,
+      "desc": "Đặt hành động và xây dựng sáng tạo Minecraft trong tay trẻ em với cuộc phiêu lưu giải cứu Minecraft này mang đến cho Pill Pill và Iron Golem của trò chơi một trò chơi LEGO Minecraft 3 phần có thể tùy chỉnh!",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21159-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21159.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 6,
+      "name": "LEGO Minecraft 21158 – Alex và Panda",
+      "price": "1050000",
+      "discount": 0,
+      "hot": 1,
+      "desc": "Bạn có biết một người chơi Minecraft rất thích chăm sóc những hình gấu trúc dễ thương mà họ thấy trong trò chơi máy tính Minecraft không? Vâng, bây giờ họ có thể! Bộ đồ chơi xây dựng LEGO Minecraft Panda Nursery mang đến những cuộc phiêu lưu này,",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21158-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21158.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 7,
+      "name": "LEGO Minecraft 21157 Pig BigFig và Baby Zombie",
+      "price": "850000",
+      "discount": 0,
+      "hot": 1,
+      "desc": "Người chơi Minecraft có thể mang lại sự phấn khích trực tuyến của trò chơi với LEGO Minecraft BigFig Pig và Baby Zombie. Bộ quy mô lớn này truyền cảm hứng cho trò chơi độc lập bất tận và cung cấp các đồ trang trí Minecraft",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21157-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21157.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 8,
+      "name": "LEGO Minecraft 21156 Creeper and Ocelot – Bigfig series 2",
+      "price": "850000",
+      "discount": 0,
+      "hot": 1,
+      "desc": "Trẻ em có thể tận hưởng những cuộc phiêu lưu Minecraft trong thế giới thực với quy mô lớn với 2 nhân vật có thể xây dựng từ trò chơi video nổi tiếng: BigFig Creeper và Ocelot.",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21156-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21156.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 9,
+      "name": "LEGO Ninjago 70666 – Rồng Vàng của Lloyd",
+      "price": "850000",
+      "discount": 0,
+      "hot": 0,
+      "desc": "Tái hiện trận chiến cuối cùng hoành tráng giữa Golden Ninja Lloyd và Overlord với Rồng vàng LEGO NINJAGO Legacy 70666, với yên ngựa nhỏ, mở miệng với game bắn súng ẩn giấu, và chân, cánh và đuôi có thể nhìn thấy được",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/02/70666.4-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/02/70666.4.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 10,
+      "name": "LEGO DUPLO 10910 – Tàu Ngầm Khám Phá Đại Dương",
+      "price": "820000",
+      "discount": 0,
+      "hot": 0,
+      "desc": "Xây dựng vở kịch Phiêu lưu tàu ngầm cho trò chơi tưởng tượng kết thúc mở đưa bạn và trẻ mới biết đi của mình vào một hành trình học tập dưới biển!",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/02/10910.1-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/02/10910.1.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 11,
+      "name": "LEGO Duplo 10883 – Xếp hình Xe Tải của Bé",
+      "price": "410000",
+      "discount": 0,
+      "hot": 0,
+      "desc": "LEGO DUPLO 10883 My First Tow Truck rất dễ xây dựng và khuyến khích học tập thông qua chơi, phát triển ngôn ngữ, phát triển kỹ năng vận động tinh và phát triển nhận thức ở trẻ em",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/02/10883.5-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/02/10883.5.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 12,
+      "name": "LEGO Duplo 10908 – Máy Bay của Bé",
+      "price": "400000",
+      "discount": 0,
+      "hot": 0,
+      "desc": "LEGO Duplo 10908 – Máy Bay của Bé giúp bé nhận biết các sự việc xung quanh qua những chủ đề khác nhau, vừa học vừa chơi trẻ sẽ nhớ lâu hơn, mỗi khi khi được thực hành xong bé sẽ rất thích thú.",
+      "image": "https://thegioilego.com.vn/wp-content/uploads/2020/02/10908.4-300x300.jpg",
+      "imageReview": "https://thegioilego.com.vn/wp-content/uploads/2020/02/10908.4.jpg",
+      "idLoai": "1"
+    },
+    {
+      "id": 13,
+      "name": "Mô hình đồ chơi Kamado Tanjirou",
+      "price": "240000",
+      "discount": 10,
+      "hot": 1,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/grande/100/418/981/products/9-42e340e3-b088-4bec-b242-e98291297a4c.png?v=1652527381303",
+      "day": "2024-04-01",
+      "idLoai": "2"
+    },
+    {
+      "id": 14,
+      "name": "Mô hình đồ chơi Kamado Nezuko",
+      "price": "240000",
+      "discount": 0,
+      "views": 335,
+      "hot": 1,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/418/981/products/25-452dac68-ad0a-45aa-a8ff-9b21e4722cc1.png?v=1652527419867",
+      "idLoai": "2"
+    },
+    {
+      "id": 15,
+      "name": "Mô hình đồ chơi Agatsuma",
+      "price": "240000",
+      "discount": 10,
+      "hot": 1,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/418/981/products/13-e54496ad-9dee-466f-95de-36d3a403b3b3.png?v=1652527471350",
+      "idLoai": "2"
+    },
+    {
+      "id": 16,
+      "name": "Mô hình đồ chơi Hashibira Inosuke",
+      "price": "240000",
+      "discount": 0,
+      "hot": 0,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/418/981/products/17-41974b05-dbcf-4419-a0c3-b30531e09cb5.png?v=1652527491723",
+      "idLoai": "2"
+    },
+    {
+      "id": 17,
+      "name": "Mô hình đồ chơi Tomioka",
+      "price": "240000",
+      "discount": 10,
+      "hot": 0,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/418/981/products/29-ee3e5492-d671-4ffb-a18c-ee7dbc5128c9.png?v=1652527514013",
+      "idLoai": "2"
+    },
+    {
+      "id": 18,
+      "name": "Mô hình đồ chơi Kamado Tanjirou áo đen ",
+      "price": "240000",
+      "discount": 0,
+      "hot": 0,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/418/981/products/kimetsu-no-yaiba-801.png?v=1652527884123",
+      "idLoai": "2"
+    },
+    {
+      "id": 19,
+      "name": "Mô hình đồ chơi Viêm Trụ Rengoku Kyoujurou ",
+      "price": "240000",
+      "discount": 10,
+      "hot": 0,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/418/981/products/2-abdcfc20-41e5-4039-8695-9fdf5b3f3f82.png?v=1652527935480",
+      "idLoai": "2"
+    },
+    {
+      "id": 20,
+      "name": "Mô hình đồ chơi SonGoku đi tắm siêu dễ thương ",
+      "price": "240000",
+      "discount": 0,
+      "hot": 0,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/418/981/products/2-9f5666db-21b3-48cb-afe4-1b53ab2fcbce.png?v=1649261214600",
+      "idLoai": "2"
+    },
+    {
+      "id": 21,
+      "name": "Mô hình đồ chơi Yuji Itadori",
+      "price": "240000",
+      "discount": 10,
+      "hot": 0,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/418/981/products/mo-hinh-chu-thuat-hoi-chien-megumi-gojosatoru-kugisaki-nobara-yuji-itadori-figure-jujutsu-kaisen-14.jpg?v=1651471491077",
+      "idLoai": "2"
+    },
+    {
+      "id": 22,
+      "name": "Mô hình đồ chơi Gojo Satoru",
+      "price": "280000",
+      "discount": 0,
+      "hot": 0,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/418/981/products/mo-hinh-chu-thuat-hoi-chien-megumi-gojosatoru-kugisaki-nobara-yuji-itadori-figure-jujutsu-kaisen-20.jpg?v=1651471455527",
+      "idLoai": "2"
+    },
+    {
+      "id": 23,
+      "name": "Mô hình đồ chơi Naruto siêu dễ thương",
+      "price": "280000",
+      "discount": 0,
+      "hot": 0,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/418/981/products/32-c89264b6-a447-4692-a4b3-631bafe9aebf.png?v=1651729474000",
+      "idLoai": "2"
+    },
+    {
+      "id": 24,
+      "name": "Mô hình đồ chơi Kakashi siêu dễ thương",
+      "price": "280000",
+      "discount": 0,
+      "hot": 0,
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      "image": "https://bizweb.dktcdn.net/thumb/grande/100/418/981/products/34-97f67351-304b-41c1-9e96-642b20f6c06e.png?v=1651729548947",
+      "idLoai": "2"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "nameCate": "Đồ chơi lắp ráp"
+    },
+    {
+      "nameCate": "Đồ chơi mô hình",
+      "id": 2
+    },
+    {
+      "nameCate": "abc1",
+      "id": 3
+    }
+  ],
+  "bill": [
+    {
+      "id": 1,
+      "name": "le huu hai long",
+      "email": "123456@gmail.com",
+      "phone": "0384985533",
+      "address": "45 NTT"
+    },
+    {
+      "name": "le huu hai long",
+      "email": "longle1@gmail.com",
+      "address": "45, Nguyen Trung",
+      "phone": 384985533,
+      "id": 2
+    },
+    {
+      "name": "le huu hai long",
+      "email": "longle1@gmail.com",
+      "address": "45, Nguyen Trung",
+      "phone": 384985533,
+      "id": 3
+    },
+    {
+      "name": "longle",
+      "email": "longle1@gmail.com",
+      "address": "California, United States",
+      "phone": 789,
+      "id": 4
+    },
+    {
+      "name": "cal",
+      "email": "longle1@gmail.com",
+      "address": "California",
+      "phone": 78465,
+      "id": 5
+    },
+    {
+      "name": "long",
+      "email": "long123@gmail.com",
+      "address": "45",
+      "phone": 384985533,
+      "id": 6
+    },
+    {
+      "name": "le huu hai long",
+      "email": "okokabc23@gmail.com",
+      "address": "45, Nguyen Trung",
+      "phone": 384985533,
+      "id": 7
+    },
+    {
+      "name": "long",
+      "email": "longle1@gmail.com",
+      "address": "NTT",
+      "phone": 384985533,
+      "id": 8
+    },
+    {
+      "name": "long",
+      "email": "okokabc23@gmail.com",
+      "address": "California",
+      "phone": 456789,
+      "id": 9
+    },
+    {
+      "name": "long",
+      "email": "longle222@gmail.com",
+      "address": "ntt",
+      "phone": 456,
+      "id": 10
+    },
+    {
+      "name": "long",
+      "email": "longle222@gmail.com",
+      "address": "California",
+      "phone": 789,
+      "id": 11
+    }
+  ],
+  "detailbill": [
+    {
+      "id": 1,
+      "idbill": 1,
+      "idProduct": 2,
+      "nameProduct": "ABC",
+      "priceProduct": "590000",
+      "amountProduct": 1
+    },
+    {
+      "idbill": 2,
+      "idProduct": 14,
+      "imageProduct": "https://bizweb.dktcdn.net/thumb/large/100/418/981/products/25-452dac68-ad0a-45aa-a8ff-9b21e4722cc1.png?v=1652527419867",
+      "nameProduct": "Mô hình đồ chơi Kamado Nezuko",
+      "priceProduct": 240000,
+      "cateProduct": "2",
+      "amountProduct": 1,
+      "id": 2
+    },
+    {
+      "idbill": 3,
+      "idProduct": 3,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/21162.4-300x300.jpg",
+      "nameProduct": "LEGO Minecraft 21162 – Cuộc phiêu lưu của Steve và Skeleton",
+      "priceProduct": 650000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 3
+    },
+    {
+      "idbill": 4,
+      "idProduct": 8,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21156-300x300.jpg",
+      "nameProduct": "LEGO Minecraft 21156 Creeper and Ocelot – Bigfig series 2",
+      "priceProduct": 850000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 4
+    },
+    {
+      "idbill": 4,
+      "idProduct": 13,
+      "imageProduct": "https://bizweb.dktcdn.net/thumb/grande/100/418/981/products/9-42e340e3-b088-4bec-b242-e98291297a4c.png?v=1652527381303",
+      "nameProduct": "Mô hình đồ chơi Kamado Tanjirou",
+      "priceProduct": 216000,
+      "cateProduct": "2",
+      "amountProduct": 1,
+      "id": 5
+    },
+    {
+      "idbill": 5,
+      "idProduct": 3,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/21162.4-300x300.jpg",
+      "nameProduct": "LEGO Minecraft 21162 – Cuộc phiêu lưu của Steve và Skeleton",
+      "priceProduct": 650000,
+      "cateProduct": "1",
+      "amountProduct": 2,
+      "id": 6
+    },
+    {
+      "idbill": 5,
+      "idProduct": 2,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/05/Lego-60223-5-300x300.jpg",
+      "nameProduct": "LEGO City 60223 – Great Vehicles Harvester",
+      "priceProduct": 1250000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 7
+    },
+    {
+      "idbill": 6,
+      "idProduct": 8,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21156-300x300.jpg",
+      "nameProduct": "LEGO Minecraft 21156 Creeper and Ocelot – Bigfig series 2",
+      "priceProduct": 850000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 8
+    },
+    {
+      "idbill": 6,
+      "idProduct": 7,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21157-300x300.jpg",
+      "nameProduct": "LEGO Minecraft 21157 Pig BigFig và Baby Zombie",
+      "priceProduct": 850000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 9
+    },
+    {
+      "idbill": 7,
+      "idProduct": 4,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21160-300x300.jpg",
+      "nameProduct": "LEGO Minecraft 21160 – Cuộc Đột Kích Của Illager",
+      "priceProduct": 2835000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 10
+    },
+    {
+      "idbill": 8,
+      "idProduct": 3,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/21162.4-300x300.jpg",
+      "nameProduct": "LEGO Minecraft 21162 – Cuộc phiêu lưu của Steve và Skeleton",
+      "priceProduct": 650000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 11
+    },
+    {
+      "idbill": 9,
+      "idProduct": 3,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/21162.4-300x300.jpg",
+      "nameProduct": "LEGO Minecraft 21162 – Cuộc phiêu lưu của Steve và Skeleton",
+      "priceProduct": 650000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 12
+    },
+    {
+      "idbill": 9,
+      "idProduct": 4,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21160-300x300.jpg",
+      "nameProduct": "LEGO Minecraft 21160 – Cuộc Đột Kích Của Illager",
+      "priceProduct": 2835000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 13
+    },
+    {
+      "idbill": 10,
+      "idProduct": 3,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/21162.4-300x300.jpg",
+      "nameProduct": "LEGO Minecraft 21162 – Cuộc phiêu lưu của Steve và Skeleton",
+      "priceProduct": 650000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 14
+    },
+    {
+      "idbill": 11,
+      "idProduct": 4,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21160-300x300.jpg",
+      "nameProduct": "LEGO Minecraft 21160 – Cuộc Đột Kích Của Illager",
+      "priceProduct": 2835000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 15
+    },
+    {
+      "idbill": 11,
+      "idProduct": 5,
+      "imageProduct": "https://thegioilego.com.vn/wp-content/uploads/2020/02/lego-minecraft-21159-300x300.jpg",
+      "nameProduct": "Lego Minecraft 21159 – Cuộc phiêu liu giải cứu Iron golem",
+      "priceProduct": 1395000,
+      "cateProduct": "1",
+      "amountProduct": 1,
+      "id": 16
+    }
+  ],
+  "user": [
+    {
+      "email": "okokabc23@gmail.com",
+      "role": 0,
+      "phone": 123,
+      "pass": "long",
+      "id": 1
+    },
+    {
+      "email": "longle222@gmail.com",
+      "role": 1,
+      "phone": 384985533,
+      "pass": "anh",
+      "id": 2
+    },
+    {
+      "email": "longle1@gmail.com",
+      "role": 1,
+      "phone": 38749855,
+      "pass": "456",
+      "id": 3
+    },
+    {
+      "email": "hailong@gmail.com",
+      "role": 1,
+      "phone": 384985533,
+      "pass": "123",
+      "id": 4
+    }
+  ]
+}

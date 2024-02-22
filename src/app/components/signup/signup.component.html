@@ -1,0 +1,85 @@
+<div class="h-screen max-w-full relative">
+  <img
+    class="h-full w-full"
+    src="https://wallpapers.com/images/hd/white-plain-background-1920-x-1080-6h60zddohc41oxfs.jpg"
+    alt=""
+  />
+  <div
+    class="absolute top-[40%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+  >
+    <div class="flex justify-center">
+      <div>
+        <img
+          width="200px"
+          src="../../../assets/public/images/logo.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="w-[500px] flex justify-center">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit()" action="">
+        <!-- EMAIL -->
+        <label for="">Email</label>
+        <div class="mt-2 mb-2">
+          <input
+            class="w-[400px] border-2 border-black p-2 rounded-lg"
+            type="text"
+            placeholder="Nhập vào email của bạn"
+            formControlName="email"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}"
+          />
+          <div
+            *ngIf="
+              myForm.get('email')?.invalid &&
+              (myForm.get('email')?.dirty || myForm.get('email')?.touched)
+            "
+          >
+            <small *ngIf="myForm.get('email')?.hasError('required')"
+              >Vui lòng nhập email</small
+            >
+            <small *ngIf="myForm.get('email')?.hasError('pattern')"
+              >Vui lòng nhập đúng định dạng</small
+            >
+          </div>
+        </div>
+        <label for="">Số điện thoại</label>
+        <div class="mt-2 mb-2">
+          <input
+            class="w-[400px] border-2 border-black p-2 rounded-lg"
+            type="number"
+            placeholder="Nhập vào số điện thoại của bạn"
+            formControlName="phone"
+            required
+          />
+        </div>
+        <!-- Mật khẩu -->
+        <label for="">Mật khẩu</label>
+        <div class="mt-2 mb-6">
+          <input
+            class="w-[400px] border-2 border-black p-2 rounded-lg"
+            type="text"
+            placeholder="Nhập vào mật khẩu của bạn"
+            formControlName="pass"
+            required
+          />
+        </div>
+        <div class="mt-2 mb-">
+          <button
+            class="bg-[#96e564] text-black font-bold w-full p-2 rounded-lg hover:opacity-75"
+          >
+            Đăng nhập
+          </button>
+        </div>
+        <div class="text-center">
+          <span
+            >Nếu bạn đã có tài khoản hãy
+            <strong class="hover:underline"
+              ><a routerLink="/dangnhap">Đăng nhập</a></strong
+            ></span
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
